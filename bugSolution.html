@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+
+  <script>
+    const element = document.getElementById("myDiv2");
+    if (element) {
+      element.innerHTML = "This will only execute if the element exists.";
+    } else {
+      console.error("Element with id 'myDiv2' not found.");
+      // Handle the error appropriately, e.g., display a message to the user
+    }
+  </script>
+</body>
+</html>
